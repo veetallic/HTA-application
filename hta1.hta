@@ -1,0 +1,56 @@
+<HTML>
+	<HEAD>
+		<HTA:APPLICATION ID="HelloExample" 
+			BORDER="thin"
+			INNERBORDER="no"
+			SCROLL="no" 
+			CAPTION="no"
+			SCROLLFLAT="no"
+			SHOWINTASKBAR="yes"
+			SINGLEINSTANCE="yes"
+			SYSMENU="yes"
+			NAVIGABLE="yes"
+			WINDOWSTATE="maximize"
+	   />
+		<TITLE>HTA - Hello World</TITLE>
+		<meta http-equiv="x-ua-compatible" content="ie=9" />
+		<link rel="stylesheet" type="text/css" href="hta1_files/style.css" />
+		<script type="text/javascript" src="hta1_files/fnc.js"></script>
+	</HEAD>
+	<BODY>
+		<div class="header">
+			<a href="#" class="btn close" id="closeBtn">&times;</a>
+			<ul class="menu" id="topmenu">
+				<li class="btn">
+					<label for="mnFile">File</label>
+					<input type="checkbox" id="mnFile">
+					<ul>
+						<li>New</li>
+						<li>Edit</li>
+						<li id="closeMenuItem">Exit</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="main">
+			<input type="checkbox" id="cbtest1" />
+			<label for="cbtest1">Check</label>
+			
+			<input type="radio" name="rd" id="rdtest1" />
+			<label for="rdtest1">Check</label>
+			<input type="radio" name="rd" id="rdtest2" />
+			<label for="rdtest2">Check</label>
+		</div>
+		
+		<div class="footer">
+			<a class="btn" href="#" id="test">Button</a>
+		</div>
+		
+		<div class="popup" id="popup">
+			<a href="#" class="btn close" id="closeBtnPopup">&times;</a>
+			<div class="header">Pop up logs</div>
+			<div class="content"></div>
+		</div>
+	</BODY>
+</HTML>
