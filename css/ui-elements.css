@@ -25,13 +25,9 @@
 }
 /* Pogas end */
 
-/* Checkbox begin */
-/*input[type="checkbox"]:checked,
-input[type="radio"]:checked {
-	outline: 5px solid #f00;
-}*/
-/* Checkbox end */
+/*================================*/
 
+/* Pop-up begin */
 .popup {
 	width: 300px;
 	height: 200px;
@@ -41,6 +37,8 @@ input[type="radio"]:checked {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	
+	display: none;
 }
 
 .popup .btn {
@@ -60,3 +58,4 @@ input[type="radio"]:checked {
 	border: solid #c0c0c0;
 	border-width: 0 1px 1px;
 }
+/* Pop-up end */

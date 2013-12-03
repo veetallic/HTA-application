@@ -1,29 +1,26 @@
 window.onload = init;
 
-config = {
-	click: {
-		closeBtn: pClose,
-		closeMenuItem: pClose,
-		closeBtnPopup: popUpClose,
-		test: test
-	}
-};
-
 function init() {
-	for (var ev in config) {
-		for (var el in config[ev]) {
-			var domEl = document.getElementById(el);
-			with (domEl) {
-				addEventListener(ev, config.click[el]);
+	config = {
+		click: {
+			closeBtn: pClose,
+			closeMenuItem: pClose,
+			closeBtnPopup: popUpClose,
+			test: test
+		}
+	};
+	
+	for (var event in config) {
+		for (var element in config[event]) {
+			var domElement = document.getElementById(element);
+			with (domElement) {
+				addEventListener(event, config[event][element]);
 				style.cursor = "pointer";
 			}
 		}
 	}
 	
-	var menus = document.querySelectorAll(".menu");
-	for (var m=0; m<menus.length; m++) {
-		
-	}
+	popUpOpen();
 }
 
 function pClose() {
@@ -35,5 +32,9 @@ function test() {
 }
 
 function popUpClose() {
-	document.getElementById("popup").style.display = "none";
+	this.parentNode.style.display = "none";
+}
+
+function popUpOpen() {
+	document.getElementById("popup").style.display = "block";
 }
