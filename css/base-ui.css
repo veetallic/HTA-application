@@ -1,0 +1,29 @@
+.header,
+.footer {
+	height: 32px;
+	line-height: 32px;
+	
+	position: relative;
+	
+	filter:progid:DXImageTransform.Microsoft.Gradient (GradientType=0, StartColorStr='#dfdfdf', EndColorStr='#c0c0c0')
+}
+
+.main {
+	position: absolute;
+	top: 32px;
+	right: 0;
+	bottom: 32px;
+	left: 0;
+	
+	padding: 20px;
+	
+	overflow: auto;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 32px;
+}

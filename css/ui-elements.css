@@ -1,0 +1,62 @@
+/* Pogas begin */
+.btn {
+	display: inline-block;
+	height: 32px;
+	padding: 0 10px;
+	
+	text-align: center;
+	line-height: 32px;
+	text-decoration: none;
+	
+	color: #eee;
+	filter:progid:DXImageTransform.Microsoft.Gradient (GradientType=0, StartColorStr='#9999ff', EndColorStr='#6666cc')
+}
+
+.btn:active {
+	filter:progid:DXImageTransform.Microsoft.Gradient (GradientType=0, StartColorStr='#6666cc', EndColorStr='#9999ff')
+}
+
+.btn.close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	font-size: 20px;
+}
+/* Pogas end */
+
+/* Checkbox begin */
+/*input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+	outline: 5px solid #f00;
+}*/
+/* Checkbox end */
+
+.popup {
+	width: 300px;
+	height: 200px;
+	margin-top: -150px;
+	margin-left: -100px;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.popup .btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.popup .header {
+	padding-left: 10px;
+}
+
+.popup .content {
+	height: 151px;
+	padding: 15px;
+	border: solid #c0c0c0;
+	border-width: 0 1px 1px;
+}

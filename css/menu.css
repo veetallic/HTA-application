@@ -1,0 +1,55 @@
+.menu, .menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu,
+.menu li {
+	display: inline-block;
+}
+
+.menu {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	
+	height: 32px;
+	
+	background: #6666cc;
+	line-height: 32px;
+}
+
+.menu ul {
+	display: none;
+	position: absolute;
+	top: 32px;
+	left: 0;
+	background: #6666cc;
+}
+
+.menu ul.active {
+	display: block;
+}
+
+.menu li {
+	padding: 0 20px;
+	cursor: pointer;
+}
+
+.menu ul > li:hover {
+	color: #fc0;
+	text-decoration: underline;
+}
+
+.menu li > input[type="checkbox"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}	
+
+.menu li > input[type="checkbox"]:checked + ul {
+	display: block;
+}
